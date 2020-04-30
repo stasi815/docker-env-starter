@@ -23,7 +23,7 @@
 
 | Variable | Description |
 | -------- | ----------- |
-| `USERNAME` | Your DockerHub username. |
+| `USERNAME` | Your DockerHub username. |****
 | `IMAGE_NAME` | Name of the repository created above. |
 | `CONTAINER_NAME` | Choose a name for this container.<br>Can be the same as `IMAGE_NAME`. |
 
@@ -37,7 +37,7 @@ $ docker build -t USERNAME/IMAGE_NAME .
 _For this particular project._
 
 ```bash
-$ docker build -t stas815/alpine .
+$ docker build -t docker-env-starter .
 ```
 
 ### 2️⃣ Run & Test
@@ -45,5 +45,5 @@ $ docker build -t stas815/alpine .
 _Runs the `IMAGE_NAME` image. Deletes the container after executing the `CMD`_.
 
 ```bash
-$ docker run --rm --name CONTAINER_NAME IMAGE_NAME
+$ docker run --rm --name docker-env-starter docker-env-starter
 ```
